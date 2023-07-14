@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Trả tiền cho tui... | Please</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      background-color: #ff5f5f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        to top,
+        lightgrey 0%,
+        lightgrey 1%,
+        #e0e0e0 26%,
+        #efefef 48%,
+        #d9d9d9 75%,
+        #bcbcbc 100%
+      );
+    }
+
+    .card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .bank {
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 768px) {
+        body {
+            height: auto;
+            padding: 50px;
+        }
+      main {
+        flex-direction: column;
+      }
+      .bank {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    marquee {
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+  </style>
+  <body>
+      <main>
+        <marquee>Tiền của bạn là của bạn, tiền bạn mượn tui là của tui 😃</marquee>
+      <div class="card bank">
+        <img src="bank.jpg" alt="" />
+      </div>
+      <div class="card momo">
+        <img src="momo.jpg" alt="" />
+        <a href="https://me.momo.vn/dductri1210">Open App</a>
+      </div>
+    </main>
+  </body>
+</html>
